@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb1c1645351eebd43b4f733069fe82d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pincho
+  nivel: HAG_Etapa02
 --- !u!61 &660151515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1029,6 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b0d4cdb3bd8e743b4f79a4d7067bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EjemploTrigger
+  nivel: HAG_Etapa02
 --- !u!212 &2057289897
 SpriteRenderer:
   serializedVersion: 2
