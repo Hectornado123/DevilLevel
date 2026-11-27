@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EjemploTrigger : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class EjemploTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player")) { 
         Debug.Log("AAAAAAAAAAAAAAAAAAAA");
+            SceneManager.LoadScene("HAG_Etapa01");
         }
     }
 }
