@@ -2,15 +2,36 @@ using UnityEngine;
 
 public class TriggerTrampa1 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject triangulo;
+
+    public int velocidad;
+
+    public bool activo;
+
+    public void Start()
     {
-        
+        activo = false;
+    }
+    public void Update()
+    {
+        if( activo != false)
+        {
+
+            triangulo.transform.Translate(0, velocidad * Time.deltaTime, 0);
+        }
+
+
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+
+            Debug.Log("oña");
+
+            activo = true;
+        }
     }
 }
